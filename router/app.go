@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/labstack/echo"
-	"gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/controller"
+	"github.com/marceloagmelo/go-restore-openshift/controller"
 )
 
 //App é uma instancia de App

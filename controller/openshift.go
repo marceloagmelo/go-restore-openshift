@@ -5,10 +5,10 @@ import (
 	"strings"
 
 	"github.com/labstack/echo"
-	gitutils "gitlab.produbanbr.corp/paas-brasil/go-git-cli/utils"
-	openshiftutils "gitlab.produbanbr.corp/paas-brasil/go-openshift-cli/utils"
-	"gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/utils"
-	"gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/variaveis"
+	gitutils "github.com/marceloagmelo/go-git-cli/utils"
+	openshiftutils "github.com/marceloagmelo/go-openshift-cli/utils"
+	"github.com/marceloagmelo/go-restore-openshift/utils"
+	"github.com/marceloagmelo/go-restore-openshift/variaveis"
 )
 
 var recusosValidos = make([]string, 15)

@@ -7,8 +7,8 @@ import (
 	"os"
 
 	pongor "github.com/marceloagmelo/pongor-echo"
-	r "gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/router"
-	"gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/variaveis"
+	r "github.com/marceloagmelo/go-restore-openshift/router"
+	"github.com/marceloagmelo/go-restore-openshift/variaveis"
 )
 
 func init() {

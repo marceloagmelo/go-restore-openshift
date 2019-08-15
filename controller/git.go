@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"gitlab.produbanbr.corp/paas-brasil/go-git-cli/utils"
-	"gitlab.produbanbr.corp/paas-brasil/go-restore-openshift/variaveis"
+	"github.com/marceloagmelo/go-git-cli/utils"
+	"github.com/marceloagmelo/go-restore-openshift/variaveis"
 )
 
 var apiProjetos = "/api/v4/projects"
