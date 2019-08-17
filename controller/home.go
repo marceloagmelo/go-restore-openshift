@@ -3,7 +3,6 @@ package controller
 import (
 	"net/http"
 	"sort"
-	"strconv"
 
 	"github.com/labstack/echo"
 	"github.com/marceloagmelo/go-git-cli/utils"
@@ -14,8 +13,8 @@ import (
 func Home(c echo.Context) error {
 	branches := []string{}
 	retBranches := []string{""}
-	idProjeto, _ := strconv.Atoi(variaveis.GitIdProjeto)
-	resultado, listaBranches := utils.Branches(variaveis.GitUrl, variaveis.GitToken, idProjeto)
+
+	resultado, listaBranches := utils.Branches(variaveis.GitUrl, variaveis.GitToken, variaveis.GitRepositorio)
 	if resultado == 0 {
 		for i := 0; i < len(listaBranches); i++ {
 			branches = append(branches, listaBranches[i].Name)

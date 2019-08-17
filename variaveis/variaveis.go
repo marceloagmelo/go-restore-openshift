@@ -25,11 +25,14 @@ var DataHoraAtual = time.Now()
 //GitUrl
 var GitUrl = os.Getenv("GIT_URL")
 
+//GitUrlDownload
+var GitUrlDownload = os.Getenv("GIT_URL_DOWNLOAD")
+
 //GitToken
 var GitToken = os.Getenv("GIT_TOKEN")
 
-//GitIdProjeto
-var GitIdProjeto = os.Getenv("GIT_PROJETO")
+//GitRepositorio
+var GitRepositorio = os.Getenv("GIT_REPOSITORIO")
 
 //OpenshiftUrl
 var OpenshiftUrl = os.Getenv("OPENSHIFT_URL")

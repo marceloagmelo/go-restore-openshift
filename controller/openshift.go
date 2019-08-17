@@ -81,7 +81,7 @@ func Restore(c echo.Context) error {
 	}
 
 	if resultado == 0 {
-		resultado, arquivoSalvo = gitutils.DownloadArquivo(variaveis.GitUrl, variaveis.GitToken, variaveis.GitIdProjeto, branch, projeto, recurso, nomeArquivo)
+		resultado, arquivoSalvo = gitutils.DownloadArquivo(variaveis.GitUrlDownload, variaveis.GitToken, variaveis.GitRepositorio, branch, projeto, recurso, nomeArquivo)
 		if resultado > 0 {
 			mensagem = "Erro ao executar o get do arquivo no git!"
 			htmlResposta = "restore-erro.html"
@@ -89,7 +89,7 @@ func Restore(c echo.Context) error {
 	}
 
 	/*
-		resultado, conteudoJSON := gitutils.GetArquivo(variaveis.GitUrl, variaveis.GitToken, variaveis.GitIdProjeto, branch, projeto, recurso, nomeArquivo)
+		resultado, conteudoJSON := gitutils.GetArquivo(variaveis.GitUrl, variaveis.GitToken, variaveis.GitRepositorio, branch, projeto, recurso, nomeArquivo)
 		if resultado > 0 {
 			mensagem = "Erro ao executar o get do arquivo no git!"
 			htmlResposta = "restore-erro.html"
