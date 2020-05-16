@@ -1,5 +1,7 @@
 FROM centos:7
 
+LABEL maintainer="Marcelo Melo marceloagmelo@gmail.com"
+
 USER root
 
 ENV GID 23550
