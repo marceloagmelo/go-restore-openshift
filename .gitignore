@@ -1,0 +1,6 @@
+# Arquivo binario
+go-restore-openshift
+
+# Vendor
+vendor/
+.vendor-new/

@@ -1,0 +1,30 @@
+FROM centos:7
+
+USER root
+
+ENV GID 23550
+ENV UID 23550
+ENV USER golang
+
+ENV APP_HOME /go/bin
+
+COPY Dockerfile $APP_HOME/Dockerfile
+WORKDIR $APP_HOME
+
+COPY go-restore-openshift $APP_HOME/go-restore-openshift
+COPY docker-container-start.sh $APP_HOME
+COPY views $APP_HOME/views
+COPY static $APP_HOME/static
+COPY recursosValidos.json $APP_HOME/recursos.json
+
+RUN groupadd --gid $GID $USER && useradd --uid $UID -m -g $USER $USER && \ 
+    chown -fR $USER:0 $APP_HOME
+
+ENV PATH $APP_HOME:$PATH
+
+EXPOSE 8080
+
+USER ${USER}
+
+ENTRYPOINT [ "./docker-container-start.sh" ]
+CMD [ "go-restore-openshift" ]

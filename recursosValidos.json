@@ -1,0 +1,52 @@
+{
+  "recursos": [
+    {
+      "nome": "buildconfig"
+    },
+    {
+      "nome": "configmap"
+    },
+    {
+      "nome": "cronjob"
+    },
+    {
+      "nome": "daemonset"
+    },
+    {
+      "nome": "deployment"
+    },
+    {
+      "nome": "deploymentconfig"
+    },
+    {
+      "nome": "imagestream"
+    },
+    {
+      "nome": "replicaSet"
+    },
+    {
+      "nome": "role"
+    },
+    {
+      "nome": "rolebinding"
+    },
+    {
+      "nome": "route"
+    },
+    {
+      "nome": "secret"
+    },
+    {
+      "nome": "service"
+    },
+    {
+      "nome": "serviceaccount"
+    },
+    {
+      "nome": "statefulset"
+    },
+    {
+      "nome": "template"
+    }
+  ]
+}
